@@ -4,7 +4,7 @@
 /**
  * main - main block
  * description: get a random alphabet check
- * return: 0
+ * Return:Always 0 (success)
  */
 int main(void)
 {
