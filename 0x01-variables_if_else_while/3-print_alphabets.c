@@ -2,18 +2,29 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - return alphabet 
+ * main - main block
  *
- * Return: Always zero
+ *description: print the alphabet in lowercase
+ *and then in uppercase, followed by a new line
+ *Return: Always zero
  */
 int main(void)
-	int ch = 'a';
-
-	while (ch <= '2')
 {
-	putchar(ch);
-	ch++;
+	int c = 'a';
+
+	while (c <= 'z')
+	{
+		putchar(c);
+		c++;
+	}
+	c = 'A';
+
+	while (c <= 'Z')
+	{
+		putchar(c);
+		c++;
+	}
+	putchar('\n');
+		return (0);
 }
-putchar('\n');
-return (0);
 
