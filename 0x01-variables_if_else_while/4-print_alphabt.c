@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
+/**
+ * main - main block
+ * description: get a random alphabet check
+ * return: 0
+ */
 int main(void)
 {
 	char c = 'a';
