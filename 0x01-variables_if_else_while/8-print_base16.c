@@ -14,13 +14,13 @@ int main(void)
 	while
 		(b <= '9')
 		{
-			putchar(c);
+			putchar(b);
 			c++;
 		}
 	while
 		(c <= 'f')
 		{
-			putchar(b);
+			putchar(c);
 			b++;
 		}
 	putchar('\n');
