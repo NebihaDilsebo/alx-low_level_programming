@@ -12,7 +12,7 @@ int main(void)
 	char b = '0';
 
 	while
-		(c <= 'a')
+		(c <= 'f')
 		{
 			putchar(c);
 			c++;
