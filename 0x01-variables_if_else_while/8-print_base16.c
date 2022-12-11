@@ -15,13 +15,13 @@ int main(void)
 		(b <= 9)
 		{
 			putchar(b);
-			c++;
+			b++;
 		}
 	while
 		(c <= 'f')
 		{
 			putchar(c);
-			b++;
+			c++;
 		}
 	putchar('\n');
 	return (0);
