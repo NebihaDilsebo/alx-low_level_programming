@@ -1,7 +1,6 @@
 #include <stdio.h>
 /**
- * main - Entry point
- * description: returns a combination of number
+ * main - returns a combination of number
  * Return 0 (success)
  */
 
