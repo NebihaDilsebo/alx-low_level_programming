@@ -9,28 +9,24 @@
 int main(void)
 {
 	int i;
-	int n;
 	int j;
 
-	for (i = 48; i < 58; i++)
+	for (i = 0; i < 100; i++)
 	{
-		for (n = 48; n < 58; n++)
+		for (j = 0; j < 100; j++)
 		{
-			if (n > i)
+			if (i < j)
 			{
-				for (j = 48; j < 58; j++)
-					if (j > n)
-					{
-						putchar(i);
-						putchar(n);
-						putchar(j);
-						if (i == 55 && n == 56 && j == 57)
-						{
-							break;
-						}
-							putchar(',');
-							putchar(' ');
-					}
+				putchar((i / 10) + 48);
+				putchar(i % 10) + 48;
+				putchar(' ');
+				putchar ((j / 10) + 48);
+				putchar ((j % 10) + 48);
+				if (i != 98 || j != 99)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
