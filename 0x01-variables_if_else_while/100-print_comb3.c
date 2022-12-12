@@ -12,22 +12,21 @@ int main(void)
 	int tens = '0';
 
 	for (tens = '0'; tens <= '9'; tens++)
+	{
+		for (ones = '0'; ones <= '9'; ones++)
+		{
+			if (!((ones == tens) || (tens > ones)))
 			{
-			for (ones = '0'; ones <= '9'; ones++)
-					{
-					if (!((ones == tens) || (tens > ones)))/* eliminate repitition*/
-					{
-					putchar(tens);
-					putchar(ones);
-					if (!(ones == '9' && tens == '8'))/*add comma and space*/
-					{
-					putchar(',');
-					putchar(' ');
-					}
-					}
-					}
-					}
-					putchar('\n');
-					return (0);
-					}
-
+				putchar(tens);
+				putchar(ones);
+				if (!(ones == '9' && tens == '8'))/*add comma and space*/
+				{
+				putchar(',');
+				putchar(' ');
+				}
+			}
+		}
+	}
+		putchar('\n');
+		return (0);
+}
