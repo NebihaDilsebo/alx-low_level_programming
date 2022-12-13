@@ -4,17 +4,15 @@
  * description: print 10x
  * Return: 0 (success)
  */
-
 void print_alphabet_x10(void)
 {
-	char c = 'a';
+	char c, i;
 
-	while (c <= 'z')
+	for (i = 0; i <= '9'; i++)
 	{
-		_putchar(c);
-		c++;
+		for (c = 'a'; c <= 'z'; c++)
+		{
+			putchar(c);
+		}
 	}
-	_putchar ('\n');
 }
-
-
