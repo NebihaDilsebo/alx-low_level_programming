@@ -5,7 +5,7 @@ nclude "main.h"
  * @n: intiger para
  */
 
-void print_diagonal(int n)
+void print_diagonal(int size)
 {
 	int x;
 
@@ -14,7 +14,7 @@ void print_diagonal(int n)
 	else
 	{
 		
-		for (x = 0; x < n);
+		for (x = 0; x < size);
 		{
 			for (i = 0; i <= x; i++)
 				_putchar(' ');
