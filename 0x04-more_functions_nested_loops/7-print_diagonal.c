@@ -3,7 +3,6 @@
 /**
  * print_diagonal - print diagonal line
  * @n: intiger para
- * Return: size
  */
 
 void print_diagonal(int n)
