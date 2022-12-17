@@ -3,7 +3,7 @@ nclude "main.h"
 /**
  * print_diagonal - print diagonal line
  * @n: intiger para
- * Return: 0
+ * Return: size
  */
 
 void print_diagonal(int size)
