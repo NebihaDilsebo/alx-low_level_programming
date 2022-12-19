@@ -11,7 +11,7 @@ int _atoi(char *s)
 {
 	int sign;
 
-	unsighned int num;
+	unsigned int num;
 	char *temp;
 
 	temp = s;
