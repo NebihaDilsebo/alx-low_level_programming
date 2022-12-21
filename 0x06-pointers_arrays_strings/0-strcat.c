@@ -24,7 +24,7 @@ char *_strcat(char *dest, char *src)
 		i++;
 		j++;
 	}
-	while (dest[i] != '\0');
+	while (dest[i] != '0\');
 	return (dest);
 }
 
