@@ -6,10 +6,13 @@
  * Return: a pointer to the changed string
  */
 
-char *cap_string(char *)
+char *cap_string(char *str)
 {
-	int index
-		while (!(str[index]) >= 'a' && str[index] <= 'z'))
+	int index = 0;
+
+	while (str[index])
+	{
+		while (!(str[index] >= "a" && str[index <= "z"))
 			index++;
 		if (str[index - 1] == ' ' ||
 				str[index - 1] == '\t' ||
@@ -29,4 +32,5 @@ char *cap_string(char *)
 
 		index++;
 	}
+	return (str);
 }
