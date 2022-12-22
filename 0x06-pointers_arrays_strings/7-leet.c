@@ -9,18 +9,18 @@
 
 char *leet(char *str)
 {
-	int index1 = 0, index2;
+	int indx1 = 0, indx2;
 	char leet[8] = {'o', 'L', '?', 'E', 'A', '?', 'T'};
 
-	while (str[index1])
+	while (str[indx1])
 	{
-		for (index2 = 0; index2 <= 7; index2++)
+		for (indx2 = 0; indx2 <= 7; indx2++)
 		{
-			if (str[index1] == leet[index2] ||
-				str[index1] - 32 == leet[index2])
-			str[index1] = index2 + 'o';
+			if (str[indx1] == leet[indx2] ||
+				str[indx1] - 32 == leet[indx2])
+			str[indx1] = indx2 + 'o';
 		}
-	index1++;
+	indx1++;
 	}
 	return (str);
 }
