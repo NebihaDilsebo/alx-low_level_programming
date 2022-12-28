@@ -23,6 +23,7 @@ int main(void)
 		if (n == 49)
 			continue;
 		printf(", ");
-		return (0);
 	}
+	printf("\n")
+	return (0);
 }
