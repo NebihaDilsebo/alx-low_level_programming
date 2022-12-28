@@ -11,10 +11,10 @@ int main(void)
 	int n;
 	long int i, j, k;
 
-	i = 1;
-	j = 2;
+	i = 0;
+	j = 1;
 	k = i + j;
-	for (n = 0; n < 50; n++)
+	for (n = 1; n < 50; n++)
 	{
 		printf("%ld", k);
 		i = j;
