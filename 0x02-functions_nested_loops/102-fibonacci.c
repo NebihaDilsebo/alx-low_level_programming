@@ -22,8 +22,7 @@ int main(void)
 		k = i + j;
 		if (n == 49)
 			continue;
-		printf(", ");
+		printf(", ")
 	}
-	printf("\n")
 	return (0);
 }
