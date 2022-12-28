@@ -20,7 +20,7 @@ int main(void)
 		i = j;
 		j = k;
 		k = i + j;
-		if (n == 48)
+		if (n == 49)
 			continue;
 		printf(", ");
 	}
