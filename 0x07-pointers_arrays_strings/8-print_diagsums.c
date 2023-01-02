@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_diagsums - prints sum of two diagonals of a square
@@ -22,10 +23,9 @@ void print_diagsums(int *a, int size)
 	{
 		sumdiag1 = sumdiag1 + a[i];
 	}
-	for (i = (size - 1); i < size1; i = i + (size - 1)
-			{
-			sumdiag2 = sumdiag2 + a[i];
-			}
-			printf("%d, %d\n", sumdiag1, sumdiag2);
-			}
-
+	for (i = (size - 1); i < size1; i = i + (size - 1))
+	{
+		sumdiag2 = sumdiag2 + a[i];
+	}
+	printf("%d, %d\n", sumdiag1, sumdiag2);
+}
