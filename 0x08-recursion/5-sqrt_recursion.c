@@ -3,7 +3,7 @@
 /**
  * helperFunction -checks if the sqrt of number exist
  * @num: number
- * @sqrt: possible sqrt of a number
+ * @psqrt: possible sqrt of a number
  *
  * Return: sqrt of number at -1 for error
  */
