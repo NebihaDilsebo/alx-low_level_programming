@@ -10,7 +10,7 @@ int _length(char *s)
 {
 	if (*s == '\0')
 		return (0);
-	return (i + _length(s + i));
+	return (1 + _length(s + 1));
 }
 
 /**
@@ -24,18 +24,20 @@ int checkp(int i, int lg, char *s)
 {
 	if (lg > 0)
 	{
-		if (s[i] == s[lg]])
+		if (s[i] == s[lg])
 		{
 			return (checkp(i + 1, lg - 1, s));
 		}
 		else if (s[i] != s[lg])
+		{
 			return (0);
-	}
-	else
-	{
+		}
+		else
+		{
+			return (1);
+		}
 		return (1);
 	}
-	return (1);
 }
 
 /**
