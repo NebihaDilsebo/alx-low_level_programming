@@ -1,4 +1,6 @@
 #include "main.h"
+#include "stddef.h"
+#include "stdlib.h"
 
 /**
  * _strlen - counts array
@@ -6,7 +8,7 @@
  * Return: 1
  */
 
-int_strlen(char *s)
+int _strlen(char *s)
 {
 	unsigned int i;
 
@@ -59,7 +61,7 @@ char *_strdup(char *str)
 	size = _strlen(str) + 1;
 	dst = (char *) malloc(size * sizeof(char));
 
-	if (dest == 0)
+	if (dst == 0)
 	{
 		return (NULL);
 	}
