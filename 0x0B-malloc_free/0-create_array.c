@@ -1,4 +1,6 @@
 #include "main.h"
+#include "stddef.h"
+#include "stdlib.h"
 
 /**
  * *create_array - a function that create an array of chars
@@ -17,7 +19,7 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
-	buffer = (char *)malloc(size * sizeof(c));
+	buffer = (char *) malloc(size * sizeof(c));
 
 	if (buffer == 0)
 	{
@@ -29,7 +31,7 @@ char *create_array(unsigned int size, char c)
 	}
 	while (position < size)
 	{
-		*buffer(buffer + position) = c;
+		*(buffer + position) = c;
 		position++;
 	}
 	return (buffer);
