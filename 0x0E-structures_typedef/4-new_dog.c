@@ -49,35 +49,35 @@ char *_strcopy(char *dest, char *src)
  * @age: the age of the dog
  * @owner: the owner of the dog
  *
- * Return: the new struct dog
+ * Return: the new struct pointer
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
-
-	dog_t *doggo;
-if (name == NULL || age < 0 || owner  == NULL)
-	return (NULL);
-
-	doggo = malloc(sizeof(dog_t));
-if (doggo == NULL)
-return (NULL);
-
-doggo->name = malloc(sizeof(char) * (_strlen(name) + 1));
-if (doggo->name == NULL)
 {
-	free(doggo);
-	return (NULL);
-}
-doggo->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
-if (doggo->owner == NULL)
-{
-	free(doggo->name);
-	free(doggo);
-	return (NULL);
-}
-doggo->name = _str_strcopy(doggo->name, name);
-doggo->age =  = age;
-doggo->owner = _strcopy(doggo->owner, owner);
+	dog_t *dog;
+	
+	if (!name || age < 0 || !owner)
+		return (NULL);
+	dog = (dog_t *)malloc(sizeof(dog_t));
+	if (dog == NULL)
+		return (NULL);
 
-return (doggo);
+	dog->name = malloc(sizeof(char) * (_strlen(name) + 1));
+	if ((*dog).name == NULL)
+	{
+		free(dog);
+		return (NULL);
+	}
+	dog->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
+	if ((*dog).owner == owner == NULL)
+	{
+		free(dog->name);
+		free(dog);
+		return (NULL);
+	}
+	dog->name = _strlen(dog->name, name);
+	dog->age = age;
+	dog->owner = _strcopy(dog->owner, owner);
+
+	return (dog);
 }
