@@ -1,4 +1,4 @@
-#include "function_poiters.h"
+#include "function_pointers.h"
 
 /**
  * int_index - funtion that searched for an intiger
