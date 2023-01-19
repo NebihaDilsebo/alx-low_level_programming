@@ -10,7 +10,7 @@
 
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	va_list valist
+	va_list valist;
 		unsigned int i;
 	char *str;
 
@@ -21,7 +21,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		str = va_arg(valist, char *);
 
 		if (str)
-			printf("%s", str)
+			printf("%s", str);
 		else
 			printf("(nil)");
 
