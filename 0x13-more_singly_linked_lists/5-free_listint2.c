@@ -3,17 +3,9 @@
 
 
 /**
-
- * free_listint2 - a function that frees the list and sets head to NULL
-
- *
-
+ * free_listint2 - a function that frees the list and sets head to NUll
  * @head: pointer to the first node
-
- *
-
  * Return: nothing
-
  */
 
 void free_listint2(listint_t **head)
