@@ -3,17 +3,9 @@
 
 
 /**
-
- * listint_len - a function that returns the number of elements.
-
- *
-
+ * listint_len - a function that returns the number of element
  * @h: pointer to the first node
-
- *
-
  * Return: number of elements
-
  */
 
 size_t listint_len(const listint_t *h)
